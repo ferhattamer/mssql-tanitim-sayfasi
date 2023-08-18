@@ -1,0 +1,114 @@
+@page "/Ulgen"
+
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #6BB8FF;
+    }
+
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.80), #6BB8FF);
+        min-height: 100vh;
+        /*yükseklik*/
+    }
+
+    .leftcolumn {
+        float: left;
+        width: 75%;
+    }
+
+
+    .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+    }
+
+    .fakeimg {
+        background-image: url("https://3.downloader.disk.yandex.com.tr/preview/2ac7940520124586b5f439f296dbe98077a8225f4e92e2de171758b3b5ebfc98/inf/6GZebgpyViJSas_u7vxtDsKoJ7w2p7H6zyKJIlzCJhQ05yYs-PX1Hh3C4WCUZqrojsVfU5ENUD34I4K4XslxWg%3D%3D?uid=1559122697&filename=9f78307a4bd583406bd269cde6d0da5c.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1559122697&tknv=v2&size=1583x711");
+
+        padding: 20px;
+
+        min-height: 75vh;
+        display: flex;
+        /*flex box yapısına göre hizalama*/
+        justify-content: center;
+        /*x kordinatında hizla*/
+        align-items: center;
+        /*yukarıdan hizalama*/
+        background-repeat: no-repeat;
+        margin-left: 13%;
+    }
+
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        margin-left: 30%;
+    }
+
+    /* Footer */
+    .footer {
+        background: black;
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .footer_text {
+        color: white;
+    }
+</style>
+
+<ul>
+   <li><a href="/Tengri">Tengri</a></li>
+    <li><a href="/Kayra">Kayra</a></li>
+    <li><a class="active" href="/Ulgen">Ülgen</a></li>
+    <li><a href="/Erlik">Erlik</a></li>
+    <li><a  href="/Mergen">Mergen</a></li>
+     <li><a  href="/Tulpar">Tulpar</a></li>
+     <li><a  href="/Semruk">Semrük</a></li>
+</ul>
+
+<div class="row">
+    <div class="leftcolumn">
+        <div class="card">
+            <br/>
+            <div class="fakeimg" style="height:200px;"></div>
+            <h2>Ülgen</h2>
+            <br/>
+            <p>@Ulgenmetin </p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer_text">
+        <p>O Tengri'dir ki; Yarattığı türk için kitap yazmamıştır. O'nun dili,kanunu,hükmü doğadır. Doğa kendi
+            kanunlarını asla çiğnemez.</p>
+    </div>
+</div>

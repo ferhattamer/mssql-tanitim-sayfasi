@@ -1,0 +1,66 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Acme', sans-serif;
+        color: white;
+        font-family: sans-serif;
+        background-image: url("https://1.downloader.disk.yandex.com.tr/preview/b6c2c39f4d34f880dd67277100bf19dd02e00ee2d585a778a95c60501d792aeb/inf/okNlP0rLno8WwNdjsKxQIajarj0gsmI8KUfaLIuAvX5HCg5O2J75ygpWk2VbE_fHKFwPh8h6uzqVClXvU8NJ2w%3D%3D?uid=1559122697&filename=background_image.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1559122697&tknv=v2&size=1898x942");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        min-height: 100vh;
+        display: flex;
+        /*flex box yapısına göre hizalama*/
+        justify-content: center;
+        /*x kordinatında hizla*/
+        align-items: center;
+        /*yukarıdan hizalama*/
+    }
+
+    .button {
+        float: right;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .button2 {
+        background-color: #008CBA;
+    }
+
+    /* Blue */
+</style>
+<div class="background_image">
+    <br /><br /><br /><br />
+    <Center>
+        <h1>Merhaba! Türk mitolojisi hakkında neler biliyoruz hiç düşündünüz mü ?</h1>
+    </Center>
+
+    Keşfetmeye Hazırlanın...
+
+    <form method="get" action="/Tengri">
+        <button class="button button2" type="submit">Devam</button>
+    </form>
+    <br /><br />
+    <SurveyPrompt Title="Yaptığım Uygulamaları" />
+</div>
